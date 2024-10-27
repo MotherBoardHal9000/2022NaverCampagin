@@ -1,0 +1,201 @@
+/*웹사이트 == 1200px 이상
+  타블렛 사이트 == max-width:1200px
+  모바일 사이트 == min-width:0px*/
+
+body {
+  background-color: violet;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100vw;
+    height: 81px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #000000;
+    position: fixed;
+  }
+
+  .headerContents {
+    width: inherit;
+    height: 81px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .header h1 {
+    width: 200px;
+    height: 81px;
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 30px;
+  }
+
+  .header img {
+    width: 28px;
+    height: 26px;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+  }
+
+  ul {
+    width: fit-content;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+
+  ul li {
+    margin: 10px;
+    display: none;
+  }
+
+  ul i {
+    margin: 5px;
+    display: none;
+  }
+
+  header button {
+    background-color: transparent;
+    border: none;
+  }
+
+  /*section01*/
+  .section01 {
+    width: 100vw;
+    height: 581px;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: contain;
+    overflow-y: hidden;
+  }
+
+  .mainTitle {
+    display: none;
+  }
+  .mobileTitle {
+    width: 80vw;
+    height: 301px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: block;
+  }
+
+  .section01Contents {
+    width: inherit;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /*section02*/
+  .section02 {
+    width: 100vw;
+    height: 903px;
+
+    background-color: #f5f5f5;
+    overflow-y: hidden;
+  }
+
+  .section02Contents {
+    width: inherit;
+    height: 903px;
+    margin: 0 auto;
+  }
+  /*section03*/
+  .section03 {
+    width: 100vw;
+    height: 2442.75px;
+
+    background-color: var(--color-ytellow);
+    overflow-y: hidden;
+  }
+
+  .section03Contents {
+    width: inherit;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /*section04*/
+  .section04 {
+    width: 100vw;
+    height: 893px;
+
+    background-color: var(--color-white);
+    overflow-y: hidden;
+  }
+
+  .section04Contents {
+    width: inherit;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /*section05*/
+  .section05 {
+    width: 100vw;
+    height: fit-content;
+
+    background-color: #000000;
+    overflow-y: hidden;
+  }
+
+  #blogDiv {
+    width: 100vw;
+    height: 900px;
+    background-color: #66f670;
+    float: left;
+  }
+  #musicDiv {
+    width: 100vw;
+    height: 900px;
+    background-color: #902df5;
+    float: right;
+  }
+  #placeDiv {
+    width: 100vw;
+    height: 900px;
+    background-color: #f5f5f5;
+    float: left;
+  }
+  #eXpertDiv {
+    width: 100vw;
+    height: 900px;
+    background-color: #4a65f6;
+    float: right;
+  }
+  #webtoonDiv {
+    width: 100vw;
+    height: 500px;
+    background-color: #170062;
+    float: left;
+  }
+  #reportDiv {
+    width: 100vw;
+    height: 500px;
+    background-color: #07043a;
+    float: left;
+  }
+  /*section06*/
+  .section06 {
+    width: 100vw;
+    height: 893px;
+
+    background-color: var(--color-black);
+    overflow-y: hidden;
+  }
+
+  .section06Contents {
+    width: inherit;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
