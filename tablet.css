@@ -1,6 +1,10 @@
-body {
-  background-color: blue;
+iframe {
+  width: 100vw;
+  height: 25vh;
+  position: absolute;
+  top: 500px;
 }
+
 @media (min-width: 768px) and (max-width: 1280px) {
   .header {
     width: 100vw;
@@ -20,26 +24,23 @@ body {
   .headerContents {
     width: inherit;
     height: 81px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
     position: relative;
   }
 
   .header h1 {
-    width: 200px;
+    width: 75%;
     height: 81px;
     padding-top: 30px;
     font-size: 16px;
     font-weight: 900;
-    margin-left: 30px;
   }
 
   .header img {
     width: 28px;
     height: 26px;
     position: absolute;
-    left: 40px;
+    left: 0px;
     top: 25px;
   }
 
@@ -96,21 +97,67 @@ body {
   .section02 {
     width: 100vw;
     height: 903px;
-
     background-color: #f5f5f5;
     overflow-y: hidden;
   }
 
   .section02Contents {
-    width: inherit;
+    width: 100vw;
     height: 903px;
     margin: 0 auto;
+  }
+
+  .titleBox {
+    width: 85%;
+    height: 191px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  .titleBoxSub {
+    width: 100%;
+    height: 391px;
+    position: absolute;
+    top: 470px;
+    color: black;
+    border: 1px solid red;
+  }
+
+  .titleBox p {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .titleBox h2 {
+    font-size: 6.5rem;
+    font-weight: 400;
+    float: right;
+    text-align: right;
+    line-height: 100px;
+  }
+
+  .titleBox p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .titleBox h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    margin-top: 40px;
   }
   /*section03*/
   .section03 {
     width: 100vw;
     height: 2442.75px;
-
     background-color: var(--color-ytellow);
     overflow-y: hidden;
   }
@@ -119,6 +166,28 @@ body {
     width: inherit;
     height: 100%;
     margin: 0 auto;
+  }
+  .section03 .titleBox {
+    width: 85vw;
+    height: 391px;
+    position: absolute;
+    top: 50px;
+    border-bottom: 1px solid black;
+
+    color: black;
+  }
+
+  .section03 .titleBoxSub {
+    width: 85vw;
+    height: 191px;
+    position: absolute;
+    top: 470px;
+    color: black;
+  }
+  .video-wrap {
+    width: 100%;
+    height: fit-content;
+    margin-top: 700px;
   }
   /*section04*/
   .section04 {
@@ -143,6 +212,42 @@ body {
     overflow-y: hidden;
   }
 
+  .section05 img {
+    width: 430px;
+    height: 580px;
+  }
+
+  .section05pieces {
+    width: 42.5vw;
+    height: 556px;
+    border: 1px solid red;
+  }
+  .section05piecesTop {
+    width: 42.5vw;
+    height: 281px;
+    border: 1px solid white;
+  }
+
+  .section05piecesTop p {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .section05pieces2 {
+    width: 42.5vw;
+    height: 556px;
+    border: 1px solid red;
+  }
+  .section05piecesTop2 {
+    width: 42.5vw;
+    height: 281px;
+    border: 1px solid white;
+  }
+
+  .section05piecesTop2 p {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
   #blogDiv {
     width: 100vw;
     height: 900px;

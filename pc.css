@@ -1,12 +1,14 @@
 /*웹사이트 == 1200px 이상
   타블렛 사이트 == max-width:1200px
   모바일 사이트 == min-width:0px*/
-
-body {
-  background-color: tomato;
+iframe {
+  width: 100%;
+  height: 1023.25px;
+  position: absolute;
+  top: 700px;
 }
 
-@media (min-width: 1280px) and (max-width: 100vw) {
+@media (min-width: 1280px) and (screen) {
   /*header*/
   .header {
     width: 100vw;
@@ -36,12 +38,11 @@ body {
   }
 
   .header h1 {
-    width: 700px;
+    width: 65%;
     height: 81px;
     padding-top: 30px;
     font-size: 16px;
     font-weight: 900;
-    margin-left: 40px;
   }
 
   .header img {
@@ -98,6 +99,44 @@ body {
     height: 903px;
     margin: 0 auto;
   }
+
+  .titleBox {
+    width: 100%;
+    height: 391px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  .titleBoxSub {
+    width: 100%;
+    height: 391px;
+    position: absolute;
+    top: 470px;
+    color: black;
+  }
+
+  .titleBox p {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .titleBox h2 {
+    font-size: 6.5rem;
+    font-weight: 400;
+    float: right;
+    text-align: right;
+    line-height: 100px;
+  }
+
+  .video-wrap {
+    width: 100%;
+    height: 100%;
+    margin-top: 700px;
+  }
+
   /*section03*/
   .section03 {
     width: 100vw;
@@ -111,6 +150,24 @@ body {
     height: 100%;
     margin: 0 auto;
   }
+
+  .section03 .titleBox {
+    width: 85vw;
+    height: 391px;
+    position: absolute;
+    top: 50px;
+    border-bottom: 1px solid black;
+    color: black;
+  }
+
+  .section03 .titleBoxSub {
+    width: 85vw;
+    height: 191px;
+    position: absolute;
+    top: 470px;
+    color: black;
+  }
+
   /*section04*/
   .section04 {
     width: 100vw;
@@ -130,6 +187,48 @@ body {
     height: fit-content;
     background-color: #000000;
     overflow-y: hidden;
+  }
+
+  .section05 img {
+    width: 430px;
+    height: 580px;
+    float: right;
+  }
+
+  .section05pieces {
+    width: 42.5vw;
+    height: 556px;
+
+    float: right;
+  }
+  .section05piecesTop {
+    width: 42.5vw;
+    height: 281px;
+
+    float: right;
+  }
+
+  .section05piecesTop p {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .section05pieces2 {
+    width: 42.5vw;
+    height: 556px;
+
+    float: left;
+  }
+  .section05piecesTop2 {
+    width: 42.5vw;
+    height: 281px;
+
+    float: left;
+  }
+
+  .section05piecesTop2 p {
+    font-size: 2.5rem;
+    font-weight: 300;
   }
 
   #blogDiv {
@@ -180,9 +279,5 @@ body {
     width: 85%;
     height: 100%;
     margin: 0 auto;
-  }
-
-  body {
-    background: purple;
   }
 }

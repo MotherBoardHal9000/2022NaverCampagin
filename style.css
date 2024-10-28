@@ -157,6 +157,7 @@ table {
 
 /*header*/
 .header {
+  width: 100vw;
   height: 81px;
   background: linear-gradient(
     135deg,
@@ -176,25 +177,26 @@ table {
   height: 81px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: relative;
 }
 
 .header h1 {
-  width: 1073px;
+  width: 70%;
   height: 81px;
   padding-top: 30px;
   font-size: 16px;
   font-weight: 900;
-  margin-left: 10px;
+  padding-left: 30px;
 }
 
 .header img {
   width: 28px;
   height: 28px;
   position: absolute;
-  left: 30px;
-  top: 23px;
+  left: 0px;
+  top: 25px;
+  padding-left: 0px;
 }
 
 ul {
@@ -244,6 +246,7 @@ header button {
   margin: 0 auto;
   position: relative;
 }
+
 /*section02*/
 .section02 {
   width: 100vw;
@@ -255,26 +258,89 @@ header button {
 .section02Contents {
   width: 1820px;
   height: 903px;
+  position: relative;
   margin: 0 auto;
 }
+
+.titleBox {
+  width: 1820px;
+  height: 391px;
+  position: absolute;
+  top: 100px;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.titleBoxSub {
+  width: 1820px;
+  height: 371px;
+  position: absolute;
+  top: 510px;
+  color: black;
+}
+
+.titleBox p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.titleBoxP-1 {
+  float: left;
+}
+.titleBoxP-2 {
+  float: right;
+}
+
+.titleBox h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  float: right;
+  text-align: right;
+  line-height: 70px;
+}
+
 /*section03*/
 .section03 {
   width: 100vw;
-  height: 2442.75px;
+  height: 2442px;
   background-color: var(--color-ytellow);
-  overflow-y: hidden;
+  position: relative;
 }
 
 .section03Contents {
   width: 1820px;
+  height: 2442px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section03 .titleBox {
+  width: 1820px;
+  height: 391px;
+  position: absolute;
+  top: 50px;
+  border-bottom: 1px solid black;
+
+  color: black;
+}
+
+.section03 .titleBoxSub {
+  width: 1820px;
+  height: 191px;
+  position: absolute;
+  top: 470px;
+  color: black;
+}
+
+.video-wrap {
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin-top: 600px;
 }
 /*section04*/
 .section04 {
   width: 100vw;
   height: 893px;
-
   background-color: var(--color-white);
   overflow-y: hidden;
 }
@@ -283,14 +349,69 @@ header button {
   width: 1820px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 /*section05*/
 .section05 {
   width: 100vw;
   height: fit-content;
-
   background-color: #000000;
   overflow-y: hidden;
+}
+
+.section05 img {
+  width: 580px;
+  height: 580px;
+  padding-right: 5%;
+  float: right;
+}
+
+.section05pieces {
+  width: 910px;
+  height: 556px;
+  float: right;
+}
+.section05piecesTop {
+  width: 910px;
+  height: 281px;
+  float: right;
+}
+
+.section05piecesTop p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 5%;
+}
+
+.section05piecesTop h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 5%;
+  text-align: right;
+}
+
+.section05pieces2 {
+  width: 42.5vw;
+  height: 556px;
+  float: left;
+}
+.section05piecesTop2 {
+  width: 42.5vw;
+  height: 281px;
+  float: left;
+}
+
+.section05piecesTop2 p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 5%;
+}
+
+.section05piecesTop2 h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 5%;
+  text-align: right;
 }
 
 #blogDiv {
@@ -333,7 +454,6 @@ header button {
 .section06 {
   width: 100vw;
   height: 893px;
-
   background-color: var(--color-black);
   overflow-y: hidden;
 }
@@ -341,5 +461,26 @@ header button {
 .section06Contents {
   width: 1820px;
   height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section06Contents .titleBox {
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/*footer*/
+.footer {
+  width: 100vw;
+  height: 420px;
+  background-color: #000000;
+}
+
+.footerContents {
+  width: 1820px;
+  height: 100%;
+  border: 1px solid red;
   margin: 0 auto;
 }
