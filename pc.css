@@ -8,7 +8,7 @@ iframe {
   top: 700px;
 }
 
-@media (min-width: 1280px) and (screen) {
+@media only screen and (min-width: 1280px) {
   /*header*/
   .header {
     width: 100vw;
