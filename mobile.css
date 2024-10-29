@@ -9,7 +9,7 @@ iframe {
   top: 500px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .header {
     width: 100vw;
     height: 81px;
@@ -222,12 +222,12 @@ iframe {
   }
 
   .section05pieces {
-    width: 42.5vw;
+    width: inherit;
     height: 556px;
     border: 1px solid red;
   }
   .section05piecesTop {
-    width: 42.5vw;
+    width: inherit;
     height: 281px;
     border: 1px solid white;
   }
@@ -238,12 +238,12 @@ iframe {
   }
 
   .section05pieces2 {
-    width: 42.5vw;
+    width: inherit;
     height: 556px;
     border: 1px solid red;
   }
   .section05piecesTop2 {
-    width: 42.5vw;
+    width: inherit;
     height: 281px;
     border: 1px solid white;
   }
@@ -301,5 +301,17 @@ iframe {
     width: inherit;
     height: 100%;
     margin: 0 auto;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 420px;
+    background-color: #000000;
+  }
+
+  .footerContents {
+    width: inherit;
+    height: 420px;
+    background-color: #000000;
   }
 }
